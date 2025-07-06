@@ -46,7 +46,7 @@ export default function Clock(){
                     setCounterSec(counterSec - 1)
                 }
             }
-        }, 10)
+        }, 1000)
         return () => clearInterval(timer)
     }, [play, counterMin, counterSec, isFocus, breakMin, laps])
 
